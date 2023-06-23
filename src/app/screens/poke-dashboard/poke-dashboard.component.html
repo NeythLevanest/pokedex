@@ -1,0 +1,46 @@
+<main data-poke-card>
+    <button class="back-btn" (click)="gotoBack()"><i data-feather="arrow-left" stroke="#ffffff"></i></button>
+    <section id="1" class="section-1" [ngClass] = "pokemon.types[0].type.name">
+        <div id="poke-name-section" class="poke-name">
+            <div (click)="getPokemonDetails('1')">
+                <h1 data-poke-name>
+                   {{pokemon.name}}
+                </h1>
+                <ul data-poke-types class="skills">
+                    <li id="skill-1" *ngFor="let type of pokemon.types">{{type.type.name}}</li>
+                </ul>
+            </div>
+            <div data-poke-img-container class="poke-img-content">
+                <img data-poke-img id="" class="poke-img" src="../../../assets/pokemons/poke_{{pokemon.id}}.gif">
+            </div>
+        </div>
+    </section>
+    <section id="2" class="section-2">
+        <nav id="nav-control" class="nav">
+            <ul class="nav-control-ul">
+                <li (click)="renderComponent(1)" id="tab1">Descripción</li>
+                <li (click)="renderComponent(2)" id="tab1">Evoluciones</li>
+                <li (click)="renderComponent(3)" id="tab1">Habilidades</li>
+            </ul>
+        </nav>
+
+        <div id="tab-content" class="tab-content">
+            <div class="content active" id="content1">
+                <div [ngSwitch]="tabactualComponent">
+                    <div *ngSwitchCase=1>
+                        <app-poke-description-card [pokemon]="pokemon"></app-poke-description-card>    
+                    </div>
+                    <div *ngSwitchCase=2>
+                        <app-poke-evolution-card [pokemon]="pokemon"></app-poke-evolution-card>
+                    </div>
+                    <div *ngSwitchCase=3>
+                        <app-poke-skills-card [moves]="pokemon.moves"></app-poke-skills-card>
+                    </div>
+                    <div *ngSwitchDefault>
+                        <app-poke-description-card [pokemon]="pokemon"></app-poke-description-card> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

@@ -1,0 +1,192 @@
+.back-btn
+{
+    list-style: none;
+    position: absolute;
+    background-color: rgba($color: #ffffff, $alpha: 0.3);
+    border: 0;
+    border-radius: 1rem;
+    transform: translateX(1rem) translateY(2rem); 
+    
+}
+main
+{
+    
+}
+.section-1
+{
+    //background-color: rgba($color: #00b7ff, $alpha: 1.0);
+    width: 100%;
+    height: 50vh;
+    z-index: -2;
+}
+
+.poke-name
+{
+    padding: 80px 20px 0px 20px;
+    color: white;
+    font-weight: bolder;
+}
+
+.poke-img-content
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.poke-img-content img
+{
+    z-index: 1000;
+    transform: translateY(1rem);
+}
+.skills
+{
+    padding: 0;
+    padding-top: 15px;
+    list-style: none;
+    display: flex;
+}
+
+.skills li
+{
+    background-color: rgba($color: #ffffff, $alpha: 0.3);
+    padding:5px 20px 5px 20px;
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+.section-2
+{
+    position: relative;
+    background-color: rgba($color: #ffffff, $alpha: 1.0);
+    width: 100%;
+    height: 50vh;
+    border-radius: 3rem 3rem 0 0;
+    transform: translateY(-3rem);
+}
+
+.nav-control-ul
+{
+    width: 100%;
+    list-style: none;
+    color: rgba($color: #646464, $alpha: 1.0);
+    padding: 0 25px 0 25px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between
+}
+.nav-control-ul li
+{
+    height: 50px;
+    
+}
+.nav-control-ul li:active
+{
+    font-weight: bolder;
+    border-bottom: solid rgba($color: #2a74ff, $alpha: 1.0);
+}
+.nav-control-ul li:hover
+{
+    cursor: pointer;
+    font-weight: bolder;
+    border-bottom: solid rgba($color: #2a74ff, $alpha: 1.0);
+}
+
+.tab-content
+{
+    padding: 0 20px 0 20px;
+}
+
+.tab {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.content {
+    display: none;
+    font-size: 0.9rem;
+}
+
+/* Estilo de la pestaña activa */
+.tab.active {
+    background-color: #ddd;
+}
+
+/* Mostrar contenido cuando la pestaña correspondiente está activa */
+.content.active {
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: none;
+    padding: 5px 50px 10px 5px;
+}
+.title-character
+{
+    color: rgba($color: #646464, $alpha: 1.0);
+}
+.description-character
+{
+    font-weight: bolder;
+}
+
+.title-skill
+{
+    color: rgba($color: #646464, $alpha: 1.0);
+}
+.description-skill
+{
+    padding-right: 15px;
+    font-weight: bolder;
+}
+
+.bar-skill
+{
+    width: 100px;
+    padding: 0 !important;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  .progress {
+    height: 20px;
+    border-radius: 50px;
+  }
+//contenedor 2
+  .move-details
+  {
+    height: 35vh;
+    padding: 0;
+    list-style: none;
+    color: #595365;
+    span
+    {
+        font-weight: bolder;
+    }
+    overflow-y: auto;
+  }
+  .move-details li
+  {
+    border-bottom: solid 1px rgba($color: #c4c4c4, $alpha: 1.0);
+  }
+
+  .move-details li:hover
+  {
+    cursor: pointer;
+    background-color: rgba($color: #e2e2e2, $alpha: 1.0);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  

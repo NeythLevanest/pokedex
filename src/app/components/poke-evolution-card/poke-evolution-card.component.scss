@@ -1,0 +1,72 @@
+
+.poke-grid
+{
+    display: grid;
+    margin: auto;
+    justify-content: space-around;
+    text-align: center;
+    
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.5rem;
+}
+.poke-card
+{
+    margin: auto;
+    height: 120px;
+    width: 100px;
+    border-radius: 0.5rem;
+    vertical-align: middle;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+    
+}
+
+.poke-card:hover
+{
+    cursor: pointer;
+}
+
+
+.poke-img-content
+{
+    color: rgb(33, 33, 33);
+}
+
+.poke-img-content img
+{
+    height: 5rem;
+    z-index: 1000;
+}
+
+
+//tablets
+@media screen and (min-width: 40em) and (max-width: 63.9em) {
+    .poke-grid
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+    }
+}
+
+//WEB
+@media screen and (min-width: 64em) {
+    .poke-grid
+    {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem;
+    }
+    .card-details-course
+    {
+        h6
+        {
+            font-weight: bolder;
+            font-size: 1.3rem;
+        }
+    }
+}
+  
+  

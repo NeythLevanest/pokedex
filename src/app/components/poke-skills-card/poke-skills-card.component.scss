@@ -1,0 +1,24 @@
+//contenedor 2
+.move-details
+{
+  height: 35vh;
+  padding: 0;
+  list-style: none;
+  color: #595365;
+  span
+  {
+      font-weight: bolder;
+  }
+  overflow-y: auto;
+}
+.move-details li
+{
+  border-bottom: solid 1px rgba($color: #c4c4c4, $alpha: 1.0);
+}
+
+.move-details li:hover
+{
+  cursor: pointer;
+  background-color: rgba($color: #e2e2e2, $alpha: 1.0);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

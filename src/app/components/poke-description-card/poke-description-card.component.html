@@ -1,0 +1,36 @@
+<div>
+    <h6>General</h6>
+    <table id="description-info">
+        <tbody>
+            <tr >
+                <td class="title-character">Exp</td>
+                <td class="description-character">{{pokemon.base_experience}} xp</td>
+            </tr>
+            <tr >
+                <td class="title-character">Altura</td>
+                <td class="description-character">{{pokemon.height/10}} cm</td>
+            </tr>
+            <tr >
+                <td class="title-character">Peso</td>
+                <td class="description-character">{{pokemon.weight/10}} kg</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <h6>Estadísticas</h6>
+    <table id="description-info">
+        <tbody>
+            <tr *ngFor="let stat of pokemon.stats">
+                <td class="title-skill" >{{stat.stat.name}}</td>
+                <td class="description-skill">{{stat.base_stat}} %</td>
+                <td class="bar-skill">
+                    <div class="progress-bar">
+                        <div class="progress" [style.width.px]="stat.base_stat" [ngClass] = "pokemon.types[0].type.name"></div>
+                      </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,23 @@
+main
+{
+    padding: 10px;
+}
+.section-1
+{
+    h1
+    {
+        color: rgba($color: #333333, $alpha: 1.0);
+        padding: 1.5rem 0 1.5rem 0;
+    }
+}
+.imgbackground {
+    z-index: -1;
+    position: absolute;
+    opacity: 0.2;
+    //filter: invert(1);
+    top:-5rem !important;
+    right: -4.5rem;
+    //transform: translateX(1rem) translateY(0.5rem)!important;
+    width: 15rem;
+    height: auto;
+}

@@ -1,0 +1,44 @@
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: none;
+    padding: 5px 50px 10px 5px;
+}
+.title-character
+{
+    color: rgba($color: #646464, $alpha: 1.0);
+}
+.description-character
+{
+    font-weight: bolder;
+}
+
+.title-skill
+{
+    color: rgba($color: #646464, $alpha: 1.0);
+}
+.description-skill
+{
+    padding-right: 15px;
+    font-weight: bolder;
+}
+
+.bar-skill
+{
+    width: 100px;
+    padding: 0 !important;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  .progress {
+    height: 20px;
+    border-radius: 50px;
+  }

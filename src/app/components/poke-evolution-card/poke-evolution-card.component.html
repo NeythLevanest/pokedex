@@ -1,0 +1,12 @@
+<main>
+    <div class="poke-grid" >
+        <div (click)="goToPokeInfo(pokeEvolution.id)" class="poke-card" *ngFor="let pokeEvolution of pokemonEvoList">
+            <div class="poke-img-content">
+                <img class="poke-img" src="../../../assets/pokemons/poke_{{pokeEvolution.id}}.gif">
+                <p data-poke-name>
+                    {{pokeEvolution.name}}
+                 </p>
+            </div>
+        </div>
+    </div>
+</main>

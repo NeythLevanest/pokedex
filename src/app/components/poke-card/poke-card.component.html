@@ -1,0 +1,14 @@
+<div (click)="goToPokeInfo(pokemon.id)" class="poke-card" [ngClass] = "pokemon.types[0].type.name">
+    <div class="poke-name col-sm">
+        <p data-poke-name>
+           {{pokemon.name}}
+        </p>
+        <ul data-poke-types class="skills">
+            <li id="skill-1" *ngFor="let type of pokemon.types">{{type.type.name}}</li>
+        </ul>
+    </div >
+    <div class="poke-img-content">
+        <img class="poke-img" src="../../../assets/pokemons/poke_{{pokemon.id}}.gif">
+        <img class="imgbackground" src="https://pokemoncalc.web.app/en/assets/pokeball.svg" alt="${pokemon.name}">
+    </div>
+</div>
